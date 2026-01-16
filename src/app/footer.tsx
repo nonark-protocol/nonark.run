@@ -71,6 +71,7 @@ export function Footer() {
 				<a href="https://github.com/ibelick/nim" target="_blank">
 					<TextLoop className="text-xs text-zinc-500">
 						<span>© 2026 Nonark.</span>
+						<span>We build software products</span>
 						<span>White Facet</span>
 					</TextLoop>
 				</a>
