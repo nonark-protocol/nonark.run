@@ -5,6 +5,7 @@ import { Header } from './header';
 import { Footer } from './footer';
 import { ThemeProvider } from 'next-themes';
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next';
+import GoogleAnalytics from '@/lib/GoogleAnalytics';
 
 export const viewport: Viewport = {
 	width: 'device-width',
@@ -64,6 +65,7 @@ export default function RootLayout({
 						</div>
 					</div>
 				</ThemeProvider>
+				<GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS!} />
 				<VercelAnalytics />
 			</body>
 		</html>
