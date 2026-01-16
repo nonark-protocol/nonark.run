@@ -1,0 +1,50 @@
+export const metadata = {
+	title: 'Sharing Journey : Migrate Wordpress + Php to Next.js + Supabase',
+	description: 'Share our journey of migrating from Wordpress + Php to Next.js + Supabase',
+};
+
+# Why we migrate existing Wordpress + Php platform to Next.js Web app?
+
+<Cover src={'/blog/tree.JPG'} alt="Children's Park" caption="Children's Park" />
+
+## 배경
+
+[Designthou](https://designthou.com)는 기존에 외주업체에게 맡겨 만든 공간 컨텐츠 플랫폼을 운영하고 있었습니다. 잦은 유지보수 비용 인상,
+데이터베이스 에러, 쿼리 최적화 문제, 그리고 요청에 대한 소극적인 외주업체의 대처로 인해, 직접 Next.js를 활용하여 웹앱을 구축하기로
+하였습니다.
+
+**MAU 1,000** 명 정도 되는 플랫폼 서비스였기에, 이용 중단을 감수하더라도 추후의 원활한 서비스 운영과 사용자 피드백에 대한 조치를 위해
+불가피하게 이관작업을 진행하게 되었습니다.
+
+## 왜 Wordpress + Php 조합에서 직접 Next.js + Supabase 기반으로 마이그레이션 하나요?
+
+<Callout>
+	Next.js(React), TypeScript, 그리고 Node.js에 익숙한 개발팀이 Supabase와 AI의 도움을 받아 빠르게 프로토타이핑하고, 페이지 별로 필요한
+	기능을 빠르게 작업하기 위함입니다.
+</Callout>
+
+## 어떤 기능들을 제공하나요?
+
+1. 사용자
+
+- 건축, 인테리어, 공간 관련 뉴스 피드 제공
+- 건축, 인테리어 2D / 3D 디자인 작업 프로세스 팁 (유튜브) 공유
+- 오토캐드 / 일러스트 오픈 소스 제공
+- 건축, 인테리어, 디자인 공모전 정보 공유
+- 온라인 강의 제공
+- 온라인 강의 / 포트폴리오 피드백 리뷰 공유
+- 수강생 질문 게시판
+
+2. 어드민
+
+- 사용자 유입 대시보드
+- 관련 컨텐츠 CRUD
+
+## 언제까지 마이그레이션 예정인가요?
+
+온라인 강의와 뉴스, 리뷰, 유튜브 팁 등을 우선으로 제공할 예정입니다. 온라인 강의는 간단한 기존 유저(레거시 유저)들의 이메일과 닉네임 검증을
+통해, 간편한 회원가입을 유도하고 지속하여 강의를 들을 수 있도록 할 예정입니다.
+
+---
+
+<ArrowUpRightLink url="https://designthou.com">Designthou로 가기</ArrowUpRightLink>

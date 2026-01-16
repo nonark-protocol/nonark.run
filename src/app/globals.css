@@ -265,10 +265,6 @@
 		@apply font-bold text-xl sm:text-2xl;
 	}
 
-	.auth-page-title {
-		@apply font-bold text-base text-center sm:text-2xl;
-	}
-
 	.scrollbar-hide {
 		overflow: auto; /* 스크롤 가능 */
 
@@ -306,30 +302,6 @@
 		@apply px-3 py-1.5 bg-muted text-muted-foreground rounded-lg;
 	}
 
-	.bg-gradient-orange-50 {
-		@apply bg-radial-[at_40%_60%] from-orange-100 via-red-300 to-orange-100;
-	}
-
-	.bg-gradient-orange-100 {
-		@apply bg-radial-[at_20%_80%] from-orange-200 via-red-400 to-orange-50;
-	}
-
-	.bg-gradient-blue-100 {
-		@apply bg-radial-[at_25%_90%] from-sky-200 via-blue-400 to-sky-50;
-	}
-
-	.bg-gradient-blue-200 {
-		@apply bg-radial-[at_25%_90%] from-sky-300 via-blue-500 to-indigo-100;
-	}
-
-	.bg-gradient-blue-300 {
-		@apply bg-radial-[at_20%_80%] from-sky-100 via-blue-400 to-indigo-200 to-90%;
-	}
-
-	.bg-gradient-blue-400 {
-		@apply bg-radial-[at_20%_80%] from-sky-300 via-blue-500 to-indigo-400 to-90%;
-	}
-
 	.bg-gradient-gray-100 {
 		@apply bg-radial-[at_20%_75%] from-gray-100 via-gray-300 to-gray-50 to-90%;
 	}
@@ -346,40 +318,6 @@
 		@apply bg-radial-[at_40%_80%] from-gray-300 via-gray-500 to-indigo-200;
 	}
 
-	.liquid-glass {
-		background: rgba(255, 255, 255, 0.55);
-		backdrop-filter: blur(20px) saturate(180%);
-		-webkit-backdrop-filter: blur(20px) saturate(180%);
-
-		border-radius: 16px;
-		border: 1px solid rgba(255, 255, 255, 0.35);
-
-		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-	}
-
-	.liquid-glass::before {
-		content: '';
-		position: absolute;
-		inset: 0;
-		border-radius: inherit;
-
-		background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0.05));
-
-		pointer-events: none;
-	}
-
-	.liquid-glass::after {
-		content: '';
-		position: absolute;
-		inset: 0;
-		border-radius: inherit;
-
-		background-image: url('/noise.png');
-		opacity: 0.04;
-
-		pointer-events: none;
-	}
-
 	.outlined-text {
 		color: white;
 		-webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
@@ -387,5 +325,13 @@
 
 	.indicator {
 		@apply inline-flex justify-center items-center w-3 h-3 rounded-full;
+	}
+
+	pre::-webkit-scrollbar {
+		display: none;
+	}
+
+	.prose a {
+		text-decoration: none;
 	}
 }

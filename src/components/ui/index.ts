@@ -1,4 +1,5 @@
 export * from './animated-background';
+export * from './ascii-art';
 export * from './magnetic';
 export * from './morphing-dialog';
 export * from './scroll-progress';
