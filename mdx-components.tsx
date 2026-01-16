@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react';
 import type { MDXComponents } from 'mdx/types';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { ComponentPropsWithoutRef } from 'react';
 import { highlight } from 'sugar-high';
@@ -10,7 +11,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
 		Cover: ({ src, alt, caption }: { src: string; alt: string; caption: string }) => {
 			return (
 				<figure>
-					<img src={src} alt={alt} className="rounded-xl" />
+					<Image
+						src={src}
+						alt={alt}
+						placeholder="blur"
+						loading="lazy"
+						blurDataURL="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mM8Uw8AAh0BTZud3BwAAAAASUVORK5CYII="
+						className="rounded-xl object-cover"
+					/>
 					<figcaption className="text-center">{caption}</figcaption>
 				</figure>
 			);
