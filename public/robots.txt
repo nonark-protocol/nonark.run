@@ -1,0 +1,4 @@
+User-agent: *
+allow: /
+disallow: /private/
+sitemap: https://nonark.run/sitemap.xml
