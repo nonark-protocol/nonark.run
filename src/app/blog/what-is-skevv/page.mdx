@@ -1,6 +1,22 @@
 export const metadata = {
 	title: 'Build Product - What is skevv?',
 	description: 'About skevv, a lightweight PDF Editor',
+	openGraph: {
+		title: config.title.default,
+		description: config.subtitle,
+		siteName: 'Designthou',
+		locale: 'ko_KR',
+		type: 'website',
+		url: config.baseURL,
+		images: [
+			{
+				url: `${config.baseURL}/og/nonark-og.png`,
+				width: 1200,
+				height: 630,
+				type: 'image/png',
+			},
+		],
+	},
 };
 
 <Cover src="/project/skevv.webp" alt="Skevv" caption="skevv.vercel.app" />

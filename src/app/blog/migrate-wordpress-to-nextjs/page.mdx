@@ -1,6 +1,22 @@
 export const metadata = {
 	title: 'Sharing Journey : Migrate Wordpress + Php to Next.js + Supabase',
 	description: 'Share our journey of migrating from Wordpress + Php to Next.js + Supabase',
+	openGraph: {
+		title: config.title.default,
+		description: config.subtitle,
+		siteName: 'Designthou',
+		locale: 'ko_KR',
+		type: 'website',
+		url: config.baseURL,
+		images: [
+			{
+				url: `${config.baseURL}/og/nonark-og.png`,
+				width: 1200,
+				height: 630,
+				type: 'image/png',
+			},
+		],
+	},
 };
 
 # Why we migrate existing Wordpress + Php platform to Next.js Web app?

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		url: config.baseURL,
 		images: [
 			{
-				url: `${config.baseURL}/nonark-og.png`,
+				url: `${config.baseURL}/og/nonark-og.png`,
 				width: 1200,
 				height: 630,
 				type: 'image/png',
