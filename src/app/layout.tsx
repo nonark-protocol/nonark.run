@@ -3,9 +3,9 @@ import { Geist_Mono, Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next';
+import { Footer, Header } from '@/components/layout';
 import GoogleAnalytics from '@/lib/GoogleAnalytics';
 import { config } from '@/constants/url';
-import { Footer, Header } from '@/components/layout';
 
 export const viewport: Viewport = {
 	width: 'device-width',
@@ -21,6 +21,28 @@ export const metadata: Metadata = {
 	title: {
 		default: 'Nonark',
 		template: '%s | Home',
+	},
+	openGraph: {
+		title: config.title.default,
+		description: config.subtitle,
+		siteName: 'Designthou',
+		locale: 'ko_KR',
+		type: 'website',
+		url: config.baseURL,
+		images: [
+			{
+				url: `${config.baseURL}/nonark-og.png`,
+				width: 1200,
+				height: 630,
+				type: 'image/png',
+			},
+		],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: config.title.default,
+		description: 'Nonark - a startup build structured software product',
+		images: [`${config.baseURL}/nonark-og.png`],
 	},
 	description: 'A startup that offers structured software products and thoughtfully organized spaces.',
 	verification: {
