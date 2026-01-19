@@ -44,7 +44,7 @@ function MagneticSocialLink({ children, link }: { children: React.ReactNode; lin
 const BLUR_DATA_URL =
 	'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMjAiPjxzdG9wIG9mZnNldD0i';
 
-export default function Personal() {
+export default function PersonalPage() {
 	return (
 		<motion.main className="space-y-24" variants={VARIANTS_CONTAINER} initial="hidden" animate="visible">
 			<motion.section variants={VARIANTS_SECTION} transition={TRANSITION_SECTION}>

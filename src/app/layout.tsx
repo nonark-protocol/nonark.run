@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from 'next';
 import { Geist_Mono, Inter } from 'next/font/google';
 import './globals.css';
-import { Header } from './header';
-import { Footer } from './footer';
 import { ThemeProvider } from 'next-themes';
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next';
 import GoogleAnalytics from '@/lib/GoogleAnalytics';
+import { config } from '@/constants/url';
+import { Footer, Header } from '@/components/layout';
 
 export const viewport: Viewport = {
 	width: 'device-width',
@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://nonark.run'),
+	metadataBase: new URL(config.baseURL),
 	alternates: {
 		canonical: '/',
 	},
@@ -23,6 +23,12 @@ export const metadata: Metadata = {
 		template: '%s | Home',
 	},
 	description: 'A startup that offers structured software products and thoughtfully organized spaces.',
+	verification: {
+		google: process.env.NEXT_PUBLIC_GOOGLE_SEARCH_CONSOLE_ID,
+		other: {
+			'naver-site-verification': process.env.NEXT_PUBLIC_NAVER_SEARCH_CONSOLE_ID!,
+		},
+	},
 };
 
 const inter = Inter({

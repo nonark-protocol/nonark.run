@@ -1,6 +1,7 @@
 import { StaticImageData } from 'next/image';
 import SkevvImage from '@/public/project/skevv.webp';
 import DesignthouImage from '@/public/project/designthou.webp';
+import { config } from '@/constants/url';
 
 type Project = {
 	name: string;
@@ -26,14 +27,14 @@ export const PROJECTS: Project[] = [
 	{
 		name: 'Skevv',
 		description: 'A lightweight PDF editor - easy to reorder, merge, and compress PDFs',
-		link: 'https://skevv.vercel.app',
+		link: config.PRODUCT.SKEVV,
 		image: SkevvImage,
 		id: '2026-project1',
 	},
 	{
 		name: 'Designthou',
 		description: 'Spatial Content Platform for Architect and Designers',
-		link: 'https://designthou.com/',
+		link: config.PRODUCT.DESIGNTHOU,
 		image: DesignthouImage,
 		id: '2026-project2',
 	},
@@ -58,11 +59,11 @@ export const ARTICLES: Article[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
 	{
 		label: 'Github',
-		link: 'https://github.com/nonark-protocol',
+		link: config.OUTER.GITHUB,
 	},
 	{
 		label: 'LinkedIn',
-		link: 'https://www.linkedin.com/company/nonark',
+		link: config.OUTER.LINKEDIN,
 	},
 ];
 
